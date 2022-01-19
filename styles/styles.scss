@@ -1,0 +1,128 @@
+@import 'colors';
+@import 'media-queries';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display';
+  min-height: 100vh;
+  background-image: url('/images/pattern-background-desktop.svg');
+  background-color: $paleBlue;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.guyMusicImg {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.orderDetails {
+  padding: 30px;
+  background-color: $veryPaleBlue;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+
+  .cardTitle {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+
+  .cardDesc {
+    color: $desaturatedBlue;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .cardPlan {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $veryPaleBlue;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    
+    .cardAnnualPlan {
+      display: flex;
+      gap: 15px;
+
+      .annualPlanDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        :first-child {
+          font-weight: 900;
+        }
+
+        :nth-child(2) {
+          color: $desaturatedBlue;
+        }
+      }
+    }
+
+    button {
+      background: none;
+      border: none;
+      text-decoration: underline;
+      color: $brightBlue;
+      font-weight: 900;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .paymentButton button, .cancelButton button {
+    width: 100%;
+    border: none;
+    background-color: $brightBlue;
+    padding: 15px;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .paymentButton {
+    width: 100%;
+
+    button:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .cancelButton {
+    width: 100%;
+
+    button {
+      background: none;
+      color: $desaturatedBlue;
+
+      &:hover {
+        color: $darkBlue;
+      }
+    }
+    
+  }
+}

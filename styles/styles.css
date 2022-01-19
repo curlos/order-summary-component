@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Red Hat Display';
+  min-height: 100vh;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-color: #e0e8ff;
+  padding: 20px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+
+.guyMusicImg {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.orderDetails {
+  padding: 30px;
+  background-color: #f5f7ff;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+}
+
+.orderDetails .cardTitle {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.orderDetails .cardDesc {
+  color: #7280a7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.orderDetails .cardPlan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.orderDetails .cardPlan .cardAnnualPlan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.orderDetails .cardPlan .cardAnnualPlan .annualPlanDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.orderDetails .cardPlan .cardAnnualPlan .annualPlanDetails :first-child {
+  font-weight: 900;
+}
+
+.orderDetails .cardPlan .cardAnnualPlan .annualPlanDetails :nth-child(2) {
+  color: #7280a7;
+}
+
+.orderDetails .cardPlan button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: #3829e0;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.orderDetails .cardPlan button:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.orderDetails .paymentButton button, .orderDetails .cancelButton button {
+  width: 100%;
+  border: none;
+  background-color: #3829e0;
+  padding: 15px;
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.orderDetails .paymentButton {
+  width: 100%;
+}
+
+.orderDetails .paymentButton button:hover {
+  opacity: 0.6;
+}
+
+.orderDetails .cancelButton {
+  width: 100%;
+}
+
+.orderDetails .cancelButton button {
+  background: none;
+  color: #7280a7;
+}
+
+.orderDetails .cancelButton button:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=styles.css.map */
