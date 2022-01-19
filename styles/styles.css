@@ -137,6 +137,11 @@
   width: 100%;
 }
 
+.orderDetails .paymentButton button {
+  -webkit-box-shadow: 2px 20px 12px #e0e8ff;
+          box-shadow: 2px 20px 12px #e0e8ff;
+}
+
 .orderDetails .paymentButton button:hover {
   opacity: 0.6;
 }

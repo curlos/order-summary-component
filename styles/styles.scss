@@ -110,9 +110,13 @@
 
   .paymentButton {
     width: 100%;
+    
+    button {
+      box-shadow: 2px 20px 12px $paleBlue;
 
-    button:hover {
-      opacity: 0.6;
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 
